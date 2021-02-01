@@ -19,7 +19,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   ## take those images to docker hub
   - docker push katedou/multi-client
-  - docker psuh katedou/multi-nginx
+  - docker push katedou/multi-nginx
   - docker push katedou/multi-server
   - docker push katedou/multi-worker
 
